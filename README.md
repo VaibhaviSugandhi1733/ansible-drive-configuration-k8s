@@ -137,8 +137,7 @@ kubectl delete -f nginx-pod.yaml
 ---
 
 ## ✍️ Author
-
-**Your Name**
+Vaibhavi Sugandhi
 DevOps Engineer — CI/CD | Kubernetes | Ansible | Docker
 
 ---
