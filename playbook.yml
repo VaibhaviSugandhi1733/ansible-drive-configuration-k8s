@@ -1,0 +1,8 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: Create custom HTML page
+      copy:
+        dest: /usr/share/nginx/html/index.html
+        content: "<h1>Configured by Ansible inside Kubernetes Pod!</h1>"
+

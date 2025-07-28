@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ansible-pod
+spec:
+  containers:
+    - name: ansible
+      image: custom-ansible
+      command: ["/bin/sh", "-c", "sleep 3600"]
+

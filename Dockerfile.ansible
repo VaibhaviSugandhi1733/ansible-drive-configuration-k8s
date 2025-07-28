@@ -1,0 +1,12 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && \
+    apt-get install -y software-properties-common curl python3 python3-pip sshpass && \
+    apt-add-repository --yes --update ppa:ansible/ansible && \
+    apt-get install -y ansible
+
+WORKDIR /playbooks
+CMD ["sleep", "3600"]
+
